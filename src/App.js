@@ -546,6 +546,54 @@ function App() {
    Qt: "10 KG BAG IN BOX"
   },
   ]
+
+  const Brands = [
+    {
+      name: "AKADIA"
+    },
+    {
+      name: "CANZONA"
+    },
+    {
+      name: "COLLA S.P.A."
+    },
+    {
+      name: "DAILY DAIRY"
+    },
+    {
+      name: "DAIRYLAND"
+    },
+    {
+      name: "JOSEPH HELER"
+    },
+    {
+      name: "MONTE CHRISTO"
+    },
+    {
+      name: "PAYSAN BRETON"
+    },
+    {
+      name: "TAVERNA"
+    },
+    {
+      name: "COLLA"
+    },
+    {
+      name: "QUESOS EL PASTOR"
+    },
+    {
+      name: "PAYSAN BRETON"
+    },
+    {
+      name: "BISHOP CROPWELL"
+    },
+    {
+      name: "GNOSCH"
+    },
+    {
+      name: "MASTER MARTINI"
+    },
+  ]
 const [brand, setBrand] = useState("NONE");
 const [country, setCountry] = useState("NONE");
   
@@ -582,7 +630,7 @@ const [country, setCountry] = useState("NONE");
 <div className="grid sm:grid-cols-2 grid-cols-1 lg:w-3/5 md:w-3/5 sm:w-4/5 mx-auto">
 
 
-      <div className="  align-middle my-auto font-semibold text-sm p-1 rounded-sm justify-evenly"
+      <div className="  align-middle my-auto  font-semibold text-sm p-1 rounded-sm justify-evenly"
       onChange={allFilter}
       >
         Country
@@ -611,28 +659,28 @@ const [country, setCountry] = useState("NONE");
       </div>
 
 
-      <div className="font-semibold text-sm  "
+      <div className="  align-middle my-auto  font-semibold text-sm p-1 rounded-sm justify-evenly"
       onChange={allFilter}
       >
-        Select Country
+        Brand
         
         <select 
-        className="bprder-2 bg-gray-200 rounded-lg p-2 py-1 m-2"
-        value={country}
+        className=" bg-gray-200 border-gray-300 border-[1px] rounded-sm py-2 px-3 mx-2 justify-end align-middle"
+        value={brand}
         onChange={(e) => {
-          setCountry(e.target.value);
-          console.log(country);
+          setBrand(e.target.value);
+          console.log(brand);
         }}>
 
-          <option  value="NONE">NONE</option>
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="NONE">NONE</option>
 
-          <option  value="India">India</option>
-
-          <option  value="Indonesia">Indonesia</option>
-
-          <option  value="USA">USA</option>
-
-          <option  value="UNITED KINGDOM">UK</option>
+          {
+            Brands.map(
+              (item) => (
+                <option className="p-2 bg-gray-100 hover:bg-gray-400" value={item.name}>{item.name}</option>
+              )
+            )
+          }
 
         </select>
       </div>
@@ -659,6 +707,15 @@ const [country, setCountry] = useState("NONE");
         return products;
       }
      if((country !== "NONE") && item.Place === country) {
+      return item;
+     } 
+    }
+  ).filter(
+    function MyFil(item) {
+      if(brand === "NONE" || brand === ""){
+        return products;
+      }
+     if((brand !== "NONE") && item.Brand === brand) {
       return item;
      } 
     }
@@ -696,6 +753,15 @@ CREAMS
         return products;
       }
      if((country !== "NONE") && item.Place === country) {
+      return item;
+     } 
+    }
+  ).filter(
+    function MyFil(item) {
+      if(brand === "NONE" || brand === ""){
+        return products;
+      }
+     if((brand !== "NONE") && item.Brand === brand) {
       return item;
      } 
     }
@@ -738,6 +804,15 @@ BUTTER
       return item;
      } 
     }
+  ).filter(
+    function MyFil(item) {
+      if(brand === "NONE" || brand === ""){
+        return products;
+      }
+     if((brand !== "NONE") && item.Brand === brand) {
+      return item;
+     } 
+    }
   ).map(
     (item) => (
       <motion.div
@@ -768,6 +843,15 @@ SAFFRON
 <div className="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 m-3 p-2 justify-around">
 {
   saffron.filter(
+    function MyFil(item) {
+      if(brand === "NONE" || brand === ""){
+        return products;
+      }
+     if((brand !== "NONE") && item.Brand === brand) {
+      return item;
+     } 
+    }
+  ).filter(
     function MyFil(item) {
       if(country === "NONE" || country === ""){
         return products;
@@ -808,6 +892,15 @@ CHOCOLATE FOR PROFESSIONALS
 <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 justify-around">
 {
   choco.filter(
+    function MyFil(item) {
+      if(brand === "NONE" || brand === ""){
+        return products;
+      }
+     if((brand !== "NONE") && item.Brand === brand) {
+      return item;
+     } 
+    }
+  ).filter(
     function MyFil(item) {
       if(country === "NONE" || country === ""){
         return products;
