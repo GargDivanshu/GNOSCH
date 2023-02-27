@@ -582,32 +582,30 @@ const [country, setCountry] = useState("NONE");
 <div className="grid sm:grid-cols-2 grid-cols-1 lg:w-3/5 md:w-3/5 sm:w-4/5 mx-auto">
 
 
-      <div className="font-semibold text-sm "
+      <div className="  align-middle my-auto font-semibold text-sm p-1 rounded-sm justify-evenly"
       onChange={allFilter}
       >
-        Select Country
+        Country
         
         <select 
-        className="bprder-2 bg-gray-200 rounded-lg p-2 py-1 m-2"
+        className=" bg-gray-200 border-gray-300 border-[1px] rounded-sm py-2 px-3 mx-2 justify-end align-middle"
         value={country}
         onChange={(e) => {
           setCountry(e.target.value);
           console.log(country);
         }}>
 
-          <option  value="NONE">NONE</option>
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="NONE">NONE</option>
 
-          <option  value="DENMARK">DENMARK</option>
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="DENMARK">DENMARK</option>
 
-          <option  value="FRANCE">FRANCE</option>
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="FRANCE">FRANCE</option>
 
-          <option  value="India">India</option>
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="SPAIN">SPAIN</option>
 
-          <option  value="SPAIN">SPAIN</option>
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="UNITED KINGDOM">UK</option>
 
-          <option  value="UNITED KINGDOM">UK</option>
-
-          <option  value="IRAN">IRAN</option>
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="IRAN">IRAN</option>
 
         </select>
       </div>

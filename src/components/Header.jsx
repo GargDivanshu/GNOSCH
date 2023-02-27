@@ -41,16 +41,14 @@ export default function Header() {
         classNames="NavAnimation"
         unmountOnExit
       >
-        <nav className="Nav">
-          <a className="text-gray-500" href="/">Home</a>
-          <a className="text-gray-500" href="/">Articles</a>
-          <a className="text-gray-500" href="/">About</a>
+        <nav className="Nav bg-opacity-50">
+          
           {/* <button>Logout</button> */}
         </nav>
       </CSSTransition>
-      <button onClick={toggleNav} className="Burger">
+      {/* <button onClick={toggleNav} className="Burger">
         <RxHamburgerMenu/>
-      </button>
+      </button> */}
     </header>
   );
 }
