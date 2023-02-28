@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './images/DairyFarm.jpg';
 import logo1 from './logo-1.jpg';
 import './App.css';
 import Header from './components/Header';
@@ -22,12 +22,12 @@ function App() {
      Place: "UNITED KINGDOM",
      Brand: "JOSEPH HELER"
     },
-    {img: `${logo}`, 
+    {img: require("./images/jhVintage.png"), 
      Title: "VINTAGE CHEDDAR", 
      Place: "UNITED KINGDOM",
      Brand: "JOSEPH HELER"
     },
-    {img: `${logo}`, 
+    {img: require("./images/jhGlousc.png"), 
      Title: "DOUBLE GLOUCESTER", 
      Place: "UNITED KINGDOM",
      Brand: "JOSEPH HELER"
@@ -37,12 +37,12 @@ function App() {
      Place: "UNITED KINGDOM",
      Brand: "JOSEPH HELER"
     },
-    {img: `${logo}`, 
+    {img: require("./images/jhMatureWhite.png"),
      Title: "MATURED CHEDDAR - WHITE", 
      Place: "UNITED KINGDOM",
      Brand: "JOSEPH HELER"
     },
-    {img: `${logo}`, 
+    {img: require("./images/jhRed.png"),
      Title: "RED LEICESTER", 
      Place: "UNITED KINGDOM",
      Brand: "JOSEPH HELER"
@@ -78,20 +78,20 @@ function App() {
      Place: "UNITED KINGDOM",
      Brand: "MONTE CHRISTO"
     },
-    {img: `${logo}`, 
+    {img: require('./images/paysanBrie.png'), 
     alt: "dwv", 
     Title: "BRIE", 
     Place: "FRANCE",
     Brand: "PAYSAN BRETON"
    },
 
-   {img: `${logo}`, 
+   {img: require("./images/paysanCamembert.png"), 
    alt: "dwv", 
    Title: "CAMEMBERT", 
    Place: "FRANCE",
    Brand: "PAYSAN BRETON"
   },
-  {img: `${logo}`, 
+  {img: require("./images/paysanEmmental.png"),
   alt: "dwv", 
   Title: "EMMENTAL", 
   Place: "FRANCE",
@@ -110,43 +110,43 @@ function App() {
   Place: "FRANCE",
   Brand: "PAYSAN BRETON"
  },
- {img: `${logo}`, 
+ {img: require("./images/paysanGoatHerb.png"), 
   alt: "dwv", 
   Title: "GOAT CHEESE – HERBS & GARLIC", 
   Place: "FRANCE",
   Brand: "PAYSAN BRETON"
  },
- {img: `${logo}`, 
+ {img: require("./images/paysanGoatNat.png"), 
   alt: "dwv", 
   Title: "GOAT CHEESE – NATURAL", 
   Place: "FRANCE",
   Brand: "PAYSAN BRETON"
  },
- {img: `${logo}`, 
+ {img: require('./images/paysonGoatPepper.png'), 
   alt: "dwv", 
   Title: "GOAT CHEESE – PEPPER", 
   Place: "FRANCE",
   Brand: "PAYSAN BRETON"
  },
- {img: `${logo}`, 
+ {img: require("./images/goudaCheese.png"), 
   alt: "dwv", 
   Title: "GOUDA WEDGE", 
   Place: "NETHERLANDS",
   Brand: "DAILY DAIRY"
  },
- {img: `${logo}`, 
+ {img: require("./images/ddEDAM.png"), 
   alt: "dwv", 
   Title: "EDAM WEDGE", 
   Place: "NETHERLANDS",
   Brand: "DAILY DAIRY"
  },
- {img: `${logo}`, 
+ {img: require("./images/dailydairySmoked.png"), 
   alt: "dwv", 
   Title: "SMOKED CHEESE – NATURAL", 
   Place: "NETHERLANDS",
   Brand: "DAILY DAIRY"
  },
- {img: `${logo}`, 
+ {img: require("./images/ddSmokedHerbs.png"), 
   alt: "dwv", 
   Title: "SMOKED CHEESE – HERBS", 
   Place: "NETHERLANDS",
@@ -176,7 +176,7 @@ function App() {
   Place: "NETHERLANDS",
   Brand: "DAILY DAIRY"
  },
- {img: `${logo}`, 
+ {img: require("./images/DANEBLUE.png"), 
   alt: "dwv", 
   Title: "BLUE CHEESE", 
   Place: "DENMARK",
@@ -212,7 +212,7 @@ function App() {
   Place: "ITLAY",
   Brand: "COLLA S.P.A."
  },
- {img: `${logo}`, 
+ {img: require("./images/akadiaDanish.png"), 
   alt: "dwv", 
   Title: "FETA", 
   Place: "DENMARK",
@@ -222,22 +222,22 @@ function App() {
   alt: "dwv", 
   Title: "DANISH BRIE", 
   Place: "DENMARK",
-  Brand: "DAIRYLAND"
+  Brand: "DAIRY LAND"
  },
  {img: `${logo}`, 
   alt: "dwv", 
   Title: "DANISH CAMEMBERT", 
   Place: "DENMARK",
-  Brand: "DAIRYLAND"
+  Brand: "DAIRY LAND"
  },
 
- {img: `${logo}`, 
+ {img: require("./images/jhMildCol.png"), 
   alt: "dwv", 
   Title: "MILD CHEDDAR - COLOURED", 
   Place: "UNITED KINGDOM",
   Brand: "JOSEPH HELER"
  },
- {img: `${logo}`, 
+ {img: require("./images/jhMildWhite.png"), 
   alt: "dwv", 
   Title: "MILD CHEDDAR - WHITE", 
   Place: "UNITED KINGDOM",
@@ -249,7 +249,7 @@ function App() {
   Place: "UNITED KINGDOM",
   Brand: "JOSEPH HELER"
  },
- {img: `${logo}`, 
+ {img: require("./images/jhMature.png"), 
   alt: "dwv", 
   Title: "MATURED CHEDDAR", 
   Place: "UNITED KINGDOM",
@@ -261,14 +261,14 @@ function App() {
   Place: "ITALY",
   Brand: "COLA"
  },
- {img: `${logo}`, 
+ {img: require("./images/ddEDAM.png"), 
   alt: "dwv", 
   Title: "EDAM BALL", 
   Place: "NETHERLANDS",
   Brand: "DAIRY LAND"
  },
 
- {img: `${logo}`, 
+ {img: require("./images/goudaCheese.png"), 
   alt: "dwv", 
   Title: "GOUDA WHEEL", 
   Place: "NETHERLANDS",
@@ -286,13 +286,13 @@ function App() {
   Place: "NETHERLANDS",
   Brand: "DAIRY LAND"
  },
- {img: `${logo}`, 
+ {img: require("./images/ddChilli.png"),  
   alt: "dwv", 
   Title: "SMOKED CHEESE CHILLIES LOG", 
   Place: "NETHERLANDS",
   Brand: "DAIRY LAND"
  },
- {img: `${logo}`, 
+ {img: require("./images/ddSmoked.png"), 
   alt: "dwv", 
   Title: "SMOKED CHEESE BLACK PEPPER",
   Place: "NETHERLANDS",
@@ -365,19 +365,19 @@ function App() {
   Place: "FRANCE"
  },
 
- {img: `${logo}`, 
+ {img: require("./images/canzonaBlue.png"), 
   alt: "dwv", 
   Title: "BLUE CHEESE",
   Brand: "CANZONA",
   Place: "DENMARK"
  },
- {img: `${logo}`, 
+ {img: require(`./images/TAVERNAGREEKFETA.png`), 
   alt: "dwv", 
   Title: "GREEK FETA",
   Brand: "TAVERNA",
   Place: "GREECE"
  },
- {img: `${logo}`, 
+ {img: require('./images/paysanBrie.png'), 
   alt: "dwv", 
   Title: "FRESH BRIE",
   Brand: "PAYSAN BRETON",
@@ -416,28 +416,28 @@ function App() {
   ]
 
   const creams = [
-    {img: `${logo}`, 
+    {img: require('./images/paysanWhipping.png'),
   alt: "dwv", 
    Title: "UHT WHIPPING CREAM", 
    Brand: "PAYSAN BRETON",
    Place: "FRANCE",
    Qt: "1L"
   },
-  {img: `${logo}`, 
+  {img: require('./images/paysanCooking.png'), 
   alt: "dwv", 
    Title: "UHT COOKING CREAM", 
    Brand: "PAYSAN BRETON",
    Place: "FRANCE",
    Qt: "1L"
   },
-  {img: `${logo}`, 
+  {img: require('./images/paysanWhipping.png'),
   alt: "dwv", 
    Title: "UHT WHIPPING CREAM", 
    Brand: "PAYSAN BRETON",
    Place: "FRANCE",
    Qt: "200 ML"
   },
-  {img: `${logo}`, 
+  {img: require('./images/paysanCooking.png'), 
   alt: "dwv", 
    Title: "UHT COOKING CREAM", 
    Brand: "PAYSAN BRETON",
@@ -507,7 +507,7 @@ function App() {
   ]
 
   const saffron = [
-    {img: `${logo}`, 
+    {img: require("./images/gnoschSaffron.png"), 
   alt: "dwv", 
    Title: "SAFFRON", 
    Brand: "GNOSCH",
@@ -561,7 +561,7 @@ function App() {
       name: "DAILY DAIRY"
     },
     {
-      name: "DAIRYLAND"
+      name: "DAIRY LAND"
     },
     {
       name: "JOSEPH HELER"
@@ -620,23 +620,23 @@ const [country, setCountry] = useState("NONE");
   }
   console.log(country);
   return (
-    <div className="App">
+    <div className="App ">
       <Header/>
 
       <div className={`w-full h-[350px] bg-center bg-cover bg-[url('./images/FARM.jpg')]`}>
 
 </div>
 
-<div className="grid sm:grid-cols-2 grid-cols-1 lg:w-3/5 md:w-3/5 sm:w-4/5 mx-auto">
+<div className="grid sm:grid-cols-2 grid-cols-1 lg:w-3/5 md:w-3/5  sm:w-4/5 mx-auto">
 
 
-      <div className="  align-middle my-auto  font-semibold text-sm p-1 rounded-sm justify-evenly"
+      <div className="  align-middle my-auto   font-semibold text-sm p-1 rounded-sm justify-evenly"
       onChange={allFilter}
       >
         Country
         
         <select 
-        className=" bg-gray-200 border-gray-300 border-[1px] rounded-sm py-2 px-3 mx-2 justify-end align-middle"
+        className=" bg-gray-100 border-gray-300 border-[1px] rounded-sm py-2 px-3 mx-2 justify-end align-middle"
         value={country}
         onChange={(e) => {
           setCountry(e.target.value);
@@ -649,12 +649,19 @@ const [country, setCountry] = useState("NONE");
 
           <option className="p-2 bg-gray-100 hover:bg-gray-400" value="FRANCE">FRANCE</option>
 
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="GREECE">GREECE</option>
+
           <option className="p-2 bg-gray-100 hover:bg-gray-400" value="SPAIN">SPAIN</option>
 
           <option className="p-2 bg-gray-100 hover:bg-gray-400" value="UNITED KINGDOM">UK</option>
 
           <option className="p-2 bg-gray-100 hover:bg-gray-400" value="IRAN">IRAN</option>
 
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="ITALY">ITALY</option>
+
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="MALAYSIA">MALAYSIA</option>
+
+          <option className="p-2 bg-gray-100 hover:bg-gray-400" value="NETHERLANDS">NETHERLANDS</option>
         </select>
       </div>
 
@@ -665,7 +672,7 @@ const [country, setCountry] = useState("NONE");
         Brand
         
         <select 
-        className=" bg-gray-200 border-gray-300 border-[1px] rounded-sm py-2 px-3 mx-2 justify-end align-middle"
+        className=" bg-gray-100 border-gray-300 border-[1px] rounded-sm py-2 px-3 mx-2 justify-end align-middle"
         value={brand}
         onChange={(e) => {
           setBrand(e.target.value);
@@ -731,7 +738,7 @@ const [country, setCountry] = useState("NONE");
       <div className="flex flex-col m-3 ">
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange my-1"> {item.Title} </div>
-      <div className="h-[25px] text-sm italics text-center my-1 text-gray-500"> {item.Brand} </div>
+      <div className="h-[25px] text-sm italic text-center my-1 text-gray-500"> {item.Brand} </div>
     
     <div className="flex flex-row justify-between">
       <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
@@ -741,7 +748,7 @@ const [country, setCountry] = useState("NONE");
         (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
         (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
         (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
-        (item.Place === "ITALY") ? "https://www.sonsofitalylodge.org/wp-content/uploads/2019/05/FlagofItaly.jpg" : 
+        (item.Place === "ITALY") ? "https://www.shutterstock.com/image-illustration/italian-flag-italy-vignetted-260nw-157513982.jpg" : 
         (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
       />
       </div>
@@ -789,7 +796,7 @@ CREAMS
       <div className="flex flex-col m-3 ">
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
-      <div className="h-[25px] text-sm italics text-gray-500"> {item.Brand} </div>
+      <div className="h-[25px] text-sm italic text-gray-500"> {item.Brand} </div>
       <div className="flex flex-row justify-between">
       <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
       <img
@@ -798,13 +805,18 @@ CREAMS
         (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
         (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
         (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
-        (item.Place === "ITALY") ? "https://www.sonsofitalylodge.org/wp-content/uploads/2019/05/FlagofItaly.jpg" : 
+        (item.Place === "ITALY") ? "https://www.shutterstock.com/image-illustration/italian-flag-italy-vignetted-260nw-157513982.jpg" : 
         (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
       />
       </div>
      
     {/* </div> */}
-      <div className="h-[25px] text-sm text-gray-500"> {item.Qt} </div>
+    <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-sm text-left text-gray-500"> {item.Qt} </div>
+      <MdProductionQuantityLimits 
+      className="text-gray-500"
+      fontSize={20}/>
+      </div>
     </div>
     </motion.div>
     )
@@ -850,7 +862,7 @@ BUTTER
       <div className="flex flex-col m-3 ">
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
-      <div className="h-[25px] text-sm italics text-gray-500"> {item.Brand} </div>
+      <div className="h-[25px] text-sm italic text-gray-500"> {item.Brand} </div>
       <div className="flex flex-row justify-between">
       <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
       <img
@@ -859,11 +871,16 @@ BUTTER
         (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
         (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
         (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
-        (item.Place === "ITALY") ? "https://www.sonsofitalylodge.org/wp-content/uploads/2019/05/FlagofItaly.jpg" : 
+        (item.Place === "ITALY") ? "https://www.shutterstock.com/image-illustration/italian-flag-italy-vignetted-260nw-157513982.jpg" : 
         (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
       />
       </div>
-      <div className="h-[25px] text-sm text-gray-500"> {item.Qt} </div>
+      <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-sm text-left text-gray-500"> {item.Qt} </div>
+      <MdProductionQuantityLimits 
+      className="text-gray-500"
+      fontSize={20}/>
+      </div>
     </div>
     </motion.div>
     )
@@ -908,7 +925,7 @@ SAFFRON
       <div className="flex flex-col m-3 ">
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
-      <div className="h-[25px] text-sm italics text-gray-500"> {item.Brand} </div>
+      <div className="h-[25px] text-sm italic text-gray-500"> {item.Brand} </div>
       <div className="flex flex-row justify-between">
       <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
       <img
@@ -917,13 +934,18 @@ SAFFRON
         (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
         (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
         (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
-        (item.Place === "ITALY") ? "https://www.sonsofitalylodge.org/wp-content/uploads/2019/05/FlagofItaly.jpg" : 
+        (item.Place === "ITALY") ? "https://www.shutterstock.com/image-illustration/italian-flag-italy-vignetted-260nw-157513982.jpg" : 
         (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : 
         (item.Place === "IRAN") ? "https://th.bing.com/th/id/OIP.u2msSU_OMglAU6LKlRsPWwHaEK?pid=ImgDet&rs=1" : 
         (item.Place === "MALAYSIA") ? "https://blog.venuerific.com/wp-content/uploads/2016/10/stock-footage-flag-of-malaysia-with-fabric-structure-looping.jpg" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
       />
       </div>
-      <div className="h-[25px] text-sm text-gray-500"> {item.Qt} </div>
+      <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-sm text-left text-gray-500"> {item.Qt} </div>
+      <MdProductionQuantityLimits 
+      className="text-gray-500"
+      fontSize={20}/>
+      </div>
     </div>
     </motion.div>
     )
@@ -970,7 +992,7 @@ CHOCOLATE FOR PROFESSIONALS
       <div className="flex flex-col m-3 ">
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
-      <div className="h-[25px] text-sm italics text-gray-500"> {item.Brand} </div>
+      <div className="h-[25px] text-sm italic text-gray-500"> {item.Brand} </div>
       <div className="flex flex-row justify-between">
       <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
       <img
@@ -979,13 +1001,18 @@ CHOCOLATE FOR PROFESSIONALS
         (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
         (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
         (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
-        (item.Place === "ITALY") ? "https://www.sonsofitalylodge.org/wp-content/uploads/2019/05/FlagofItaly.jpg" : 
+        (item.Place === "ITALY") ? "https://www.shutterstock.com/image-illustration/italian-flag-italy-vignetted-260nw-157513982.jpg" : 
         (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : 
         (item.Place === "IRAN") ? "https://th.bing.com/th/id/OIP.u2msSU_OMglAU6LKlRsPWwHaEK?pid=ImgDet&rs=1" : 
         (item.Place === "MALAYSIA") ? "https://blog.venuerific.com/wp-content/uploads/2016/10/stock-footage-flag-of-malaysia-with-fabric-structure-looping.jpg" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
       />
       </div>
-      <div className="h-[25px] text-sm text-gray-500"> {item.Qt} </div>
+      <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-sm text-left text-gray-500"> {item.Qt} </div>
+      <MdProductionQuantityLimits 
+      className="text-gray-500"
+      fontSize={20}/>
+      </div>
     </div>
     </motion.div>
     )
