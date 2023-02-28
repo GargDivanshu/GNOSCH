@@ -706,7 +706,7 @@ const [country, setCountry] = useState("NONE");
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
 
- className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2">
+ className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 gap-6 mx-auto w-4/5 p-2">
 {
   products.filter(
     function MyFil(item) {
@@ -764,7 +764,7 @@ const [country, setCountry] = useState("NONE");
 CREAMS
 </div> */}
 
-<div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2">
+<div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-6 mx-auto w-4/5 m-3 p-2">
 {
   creams.filter(
     function MyFil(item) {
@@ -830,7 +830,7 @@ BUTTER
 
 <div
      
- className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 justify-around">
+ className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 gap-6 mx-auto w-4/5 justify-around">
 {
   butter.filter(
     function MyFil(item) {
@@ -894,7 +894,7 @@ BUTTER
 SAFFRON
 </div> */}
 
-<div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 justify-around">
+<div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 gap-6 mx-auto w-4/5 justify-around">
 {
   saffron.filter(
     function MyFil(item) {
@@ -961,7 +961,7 @@ SAFFRON
 CHOCOLATE FOR PROFESSIONALS
 </div> */}
 
-<div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 justify-around">
+<div className="grid lg:grid-cols-3 gap-6 mx-auto w-4/5 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 justify-around">
 {
   choco.filter(
     function MyFil(item) {
