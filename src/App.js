@@ -7,7 +7,7 @@ import { useState } from 'react';
 import NONE from './images/NONE.jpeg'
 import{ motion }from "framer-motion";
 import { NavVariants, TextContainer } from './utils/Motion';
-
+import {MdProductionQuantityLimits} from 'react-icons/md'
 
 function App() {
 
@@ -407,11 +407,11 @@ function App() {
   Brand: "PAYSAN BRETON",
   Place: "FRANCE"
  },
-  {img: `${logo}`, 
-  alt: "dwv", 
-   Title: "OKAY ", 
-   Place: "India",
-  },
+  // {img: `${logo}`, 
+  // alt: "dwv", 
+  //  Title: "OKAY ", 
+  //  Place: "India",
+  // },
 
   ]
 
@@ -790,7 +790,20 @@ CREAMS
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
       <div className="h-[25px] text-sm italics text-gray-500"> {item.Brand} </div>
-      <div className="h-[25px] text-sm text-gray-500"> {item.Place} </div>
+      <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
+      <img
+        src={`${(item.Place === "FRANCE") ? "https://th.bing.com/th/id/OIP.RPP275EzjhW01m70KN3J_AHaFj?pid=ImgDet&rs=1" : 
+        (item.Place === "DENMARK") ? "https://images5.alphacoders.com/102/thumb-1920-1025675.jpg" : 
+        (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
+        (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
+        (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
+        (item.Place === "ITALY") ? "https://www.sonsofitalylodge.org/wp-content/uploads/2019/05/FlagofItaly.jpg" : 
+        (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
+      />
+      </div>
+     
+    {/* </div> */}
       <div className="h-[25px] text-sm text-gray-500"> {item.Qt} </div>
     </div>
     </motion.div>
@@ -838,7 +851,18 @@ BUTTER
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
       <div className="h-[25px] text-sm italics text-gray-500"> {item.Brand} </div>
-      <div className="h-[25px] text-sm text-gray-500"> {item.Place} </div>
+      <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
+      <img
+        src={`${(item.Place === "FRANCE") ? "https://th.bing.com/th/id/OIP.RPP275EzjhW01m70KN3J_AHaFj?pid=ImgDet&rs=1" : 
+        (item.Place === "DENMARK") ? "https://images5.alphacoders.com/102/thumb-1920-1025675.jpg" : 
+        (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
+        (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
+        (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
+        (item.Place === "ITALY") ? "https://www.sonsofitalylodge.org/wp-content/uploads/2019/05/FlagofItaly.jpg" : 
+        (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
+      />
+      </div>
       <div className="h-[25px] text-sm text-gray-500"> {item.Qt} </div>
     </div>
     </motion.div>
@@ -885,7 +909,20 @@ SAFFRON
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
       <div className="h-[25px] text-sm italics text-gray-500"> {item.Brand} </div>
-      <div className="h-[25px] text-sm text-gray-500"> {item.Place} </div>
+      <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
+      <img
+        src={`${(item.Place === "FRANCE") ? "https://th.bing.com/th/id/OIP.RPP275EzjhW01m70KN3J_AHaFj?pid=ImgDet&rs=1" : 
+        (item.Place === "DENMARK") ? "https://images5.alphacoders.com/102/thumb-1920-1025675.jpg" : 
+        (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
+        (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
+        (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
+        (item.Place === "ITALY") ? "https://www.sonsofitalylodge.org/wp-content/uploads/2019/05/FlagofItaly.jpg" : 
+        (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : 
+        (item.Place === "IRAN") ? "https://th.bing.com/th/id/OIP.u2msSU_OMglAU6LKlRsPWwHaEK?pid=ImgDet&rs=1" : 
+        (item.Place === "MALAYSIA") ? "https://blog.venuerific.com/wp-content/uploads/2016/10/stock-footage-flag-of-malaysia-with-fabric-structure-looping.jpg" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
+      />
+      </div>
       <div className="h-[25px] text-sm text-gray-500"> {item.Qt} </div>
     </div>
     </motion.div>
@@ -934,7 +971,20 @@ CHOCOLATE FOR PROFESSIONALS
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
       <div className="h-[25px] text-sm italics text-gray-500"> {item.Brand} </div>
-      <div className="h-[25px] text-sm text-gray-500"> {item.Place} </div>
+      <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
+      <img
+        src={`${(item.Place === "FRANCE") ? "https://th.bing.com/th/id/OIP.RPP275EzjhW01m70KN3J_AHaFj?pid=ImgDet&rs=1" : 
+        (item.Place === "DENMARK") ? "https://images5.alphacoders.com/102/thumb-1920-1025675.jpg" : 
+        (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
+        (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
+        (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
+        (item.Place === "ITALY") ? "https://www.sonsofitalylodge.org/wp-content/uploads/2019/05/FlagofItaly.jpg" : 
+        (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : 
+        (item.Place === "IRAN") ? "https://th.bing.com/th/id/OIP.u2msSU_OMglAU6LKlRsPWwHaEK?pid=ImgDet&rs=1" : 
+        (item.Place === "MALAYSIA") ? "https://blog.venuerific.com/wp-content/uploads/2016/10/stock-footage-flag-of-malaysia-with-fabric-structure-looping.jpg" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
+      />
+      </div>
       <div className="h-[25px] text-sm text-gray-500"> {item.Qt} </div>
     </div>
     </motion.div>
