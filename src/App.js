@@ -237,6 +237,7 @@ function clearFilter() {
   return (
     <div className="App ">
       <Header 
+      className="z-100"
       myBrand={brand} setMyBrand={setBrand}
       myCountry={country} setMyCountry={setCountry}
       inputValue={searchText} handleSearchNote={setSearchText}/>
@@ -340,10 +341,6 @@ function clearFilter() {
 
 
 <div
-       variants={TextContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
 
  className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 gap-6 mx-auto w-4/5 p-2">
 {
@@ -370,7 +367,6 @@ function clearFilter() {
     (item) => (
       <motion.div
        variants={TextContainer}
-            initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.75 }}
       

@@ -163,7 +163,7 @@ className="mr-0 text-xl"
       </div>
 
 
-      <div className="  align-middle my-auto  font-semibold text-sm p-1 rounded-sm justify-evenly"
+      <div className="align-middle my-auto font-semibold text-sm p-1 rounded-sm justify-evenly"
       onChange={allFilter}
       >
         Brand
