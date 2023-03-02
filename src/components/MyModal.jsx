@@ -4,6 +4,8 @@ import Modal from 'react-modal';
 import {FiFilter} from 'react-icons/fi'
 import products  from './../App';
 import {RxCross1} from 'react-icons/rx'
+import {IoMdDoneAll} from 'react-icons/io'
+
 
 const customStyles = {
   content: {
@@ -187,12 +189,26 @@ className="mr-0 text-xl"
         </select>
       </div>
 
+<div className="flex">
       <button 
       onClick={clearFilter}
-      className="mx-auto cursor-pointer my-2 shadow-lg p-2 rounded-xl border border-gray-500 bg-gray-200">
-        Clear Filter
+      className="mx-auto flex cursor-pointer my-2 shadow-lg p-2 rounded-xl border border-red-500 bg-red-200">
+        <RxCross1
+          fontSize={25}
+        className="text-red-500 mx-2"
+        /> Clear Filter
       </button>
 
+      <button 
+      onClick={clearFilter}
+      className="mx-auto flex align-middle cursor-pointer my-2 shadow-lg p-2 rounded-xl border border-green-500 bg-green-200">
+       <IoMdDoneAll
+       onClick={closeModal}
+       fontSize={25}
+        className="text-green-500 mx-2"
+       /> Done
+      </button>
+</div>
 
         {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2> */}
         
