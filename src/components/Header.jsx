@@ -64,10 +64,10 @@ export default function Header({handleSearchNote, inputValue, myCountry, setMyCo
 // }
   // console.log(searchText)
   return (
-    <header className="Header grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
-      <img src={require("./../logo-1.jpg")} className="Logo mx-4" alt="logo" />
+    <header className="Header flex lg:flex-row md:flex-row sm:flex-col justify-between">
+      <img src={require("./../logo-1.jpg")} className=" mx-4" alt="logo" />
      
-        <div className="flex flex-row align-middle py-4 px-4">
+        <div className="flex flex-row align-middle py-4 px-4 w-3/5">
         <input
           type="text"
            value={inputValue}
