@@ -105,8 +105,8 @@ export default function MyModal({setMyCountry, myCountry, myBrand, setMyBrand}) 
   return (
     <div className="my-auto align-middle">
       
-      <div className="flex flex-row text-sm font-bold align-middle my-auto mx-3 px-2">
-      <span className="mx-3 my-auto"
+      <div className="flex flex-row text-sm font-bold align-middle my-auto mx-1 px-2">
+      <span className="mx-1 my-auto"
       >Filter</span>
       <FiFilter
       fontSize={30}
