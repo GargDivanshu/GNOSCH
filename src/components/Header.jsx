@@ -64,7 +64,8 @@ export default function Header({handleSearchNote, inputValue, myCountry, setMyCo
 // }
   // console.log(searchText)
   return (
-    <header className="Header flex lg:flex-row md:flex-row sm:flex-col justify-between">
+    <>
+    <header className="Header sm:flex hidden justify-between">
       <img src={require("./../logo-1.jpg")} className=" mx-4" alt="logo" />
      
         <div className="flex flex-row align-middle py-4 px-4 w-3/5">
@@ -111,5 +112,30 @@ export default function Header({handleSearchNote, inputValue, myCountry, setMyCo
         <RxHamburgerMenu/>
       </button> */}
     </header>
+
+    <header className="flex sm:hidden flex-col">
+    <img src={require("./../logo-1.jpg")} className=" mx-auto" alt="logo" />
+    <div className="flex flex-row align-middle py-4 px-4 w-full">
+        <input
+          type="text"
+           value={inputValue}
+          onChange={(event)=> handleSearchNote(event.target.value)}
+          placeholder="Search"
+          className="bg-gray-200 border border-gray-500 p-2 w-4/5 mx-auto rounded-md"
+        />
+   
+        <RxCross2
+        onClick={()=> handleSearchNote("")}
+         fontSize={30} className="bg-red-600 mx-2 cursor-pointer text-white p-1 my-auto m-0 rounded-md"/>
+
+
+        <MyModal 
+       className="my-auto align-middle"
+       myBrand={myBrand} setMyBrand={setMyBrand}
+        myCountry={myCountry} setMyCountry={setMyCountry}
+       />
+       </div>
+    </header>
+    </>
   );
 }
