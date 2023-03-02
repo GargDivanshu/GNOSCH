@@ -64,50 +64,52 @@ export default function Header({handleSearchNote, inputValue, myCountry, setMyCo
 // }
   // console.log(searchText)
   return (
-    <header className="Header">
+    <header className="Header grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
       <img src={require("./../logo-1.jpg")} className="Logo mx-4" alt="logo" />
-      <CSSTransition
+     
+        <div className="flex flex-row align-middle py-4 px-4">
+        <input
+          type="text"
+           value={inputValue}
+          onChange={(event)=> handleSearchNote(event.target.value)}
+          placeholder="Search"
+          className="bg-gray-200 border border-gray-500 p-2 w-4/5 mx-auto rounded-md"
+        />
+   
+        <RxCross2
+        onClick={()=> handleSearchNote("")}
+         fontSize={30} className="bg-red-600 mx-2 cursor-pointer text-white p-1 my-auto m-0 rounded-md"/>
+       
+       
+      
+       
+
+
+        <MyModal 
+       className="my-auto align-middle"
+       myBrand={myBrand} setMyBrand={setMyBrand}
+        myCountry={myCountry} setMyCountry={setMyCountry}
+       />
+       </div>
+      {/* <CSSTransition
         in={!isSmallScreen || isNavVisible}
         timeout={350}
         classNames="NavAnimation"
         unmountOnExit
       >
         <nav className="Nav bg-opacity-50">
-        <div className="flex flex-row align-middle">
         
-        <input
-          type="text"
-           value={inputValue}
-          onChange={(event)=> handleSearchNote(event.target.value)}
-          placeholder="Search"
-          className="bg-gray-200 border border-gray-500 p-2 w-4/5  mx-auto rounded-md"
-        />
-   
-        <RxCross2
-        onClick={()=> handleSearchNote("")}
-         fontSize={30} className="bg-red-600 cursor-pointer text-white p-1 my-auto m-0 rounded-md"/>
-       
-       
-      
-        </div>
-
-
-        <MyModal 
-       className="my-auto"
-       myBrand={myBrand} setMyBrand={setMyBrand}
-        myCountry={myCountry} setMyCountry={setMyCountry}
-       />
        
 
 
         
           {/* <div>Home</div> */}
-          {/* <button>Logout</button> */}
+          {/* <button>Logout</button> 
         </nav>
-      </CSSTransition>
-      <button onClick={toggleNav} className="Burger">
+      </CSSTransition> */}
+      {/* <button onClick={toggleNav} className="Burger">
         <RxHamburgerMenu/>
-      </button>
+      </button> */}
     </header>
   );
 }
