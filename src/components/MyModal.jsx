@@ -200,9 +200,9 @@ className="mr-0 text-xl"
       </button>
 
       <button 
+      onClick={closeModal}
       className="mx-auto flex align-middle cursor-pointer my-2 shadow-lg p-2 rounded-xl border border-green-500 bg-green-200">
        <IoMdDoneAll
-       onClick={closeModal}
        fontSize={25}
         className="text-green-500 mx-2"
        /> Done
