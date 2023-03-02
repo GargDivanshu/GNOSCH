@@ -316,7 +316,7 @@ function clearFilter() {
        <div className={`text-sm font-bold uppercase my-2 ${(country === "" && brand==="") ? "hidden" : null}`}>
         <span className="text-lg">Applied Filters</span>
         
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-2/5 mx-auto">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-3/5 mx-auto">
           <div className={`my-3 ${(country === "" && country==="") ? "hidden" : null}`}>
             Country: <span className="p-1 bg-gray-200 border border-gray-400 rounded-md"
             >{country}</span>
