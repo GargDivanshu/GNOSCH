@@ -5,14 +5,38 @@ import logo1 from './../logo-1.jpg';
 import { CSSTransition } from "react-transition-group";
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {RxCross2} from 'react-icons/rx'
-// import Modal from './Modal';
-import * as te from 'tw-elements';
-import  'flowbite'
+import Modal from 'react-modal';
+import MyModal from './MyModal'
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
 
-export default function Header({handleSearchNote, inputValue}) {
+
+export default function Header({handleSearchNote, inputValue, myCountry, setMyCountry, myBrand, setMyBrand}) {
   const [isNavVisible, setNavVisibility] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
 
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 700px)");
     mediaQuery.addListener(handleMediaQueryChange);
@@ -62,13 +86,21 @@ export default function Header({handleSearchNote, inputValue}) {
         <RxCross2
         onClick={()=> handleSearchNote("")}
          fontSize={30} className="bg-red-600 cursor-pointer text-white p-1 my-auto m-0 rounded-md"/>
-
+       
+       
+      
         </div>
 
+
+        <MyModal 
+       className="my-auto"
+       myBrand={myBrand} setMyBrand={setMyBrand}
+        myCountry={myCountry} setMyCountry={setMyCountry}
+       />
        
 
 
-
+        
           {/* <div>Home</div> */}
           {/* <button>Logout</button> */}
         </nav>
