@@ -596,6 +596,12 @@ function App() {
   ]
 const [brand, setBrand] = useState("NONE");
 const [country, setCountry] = useState("NONE");
+
+const [searchText, setSearchText] = useState('');
+
+// async function handleSearch(e) {
+//  setSearchText(e.target.value);
+// }
   
   const countryFilter = (country) => {
     if(country !== "NONE"){
@@ -621,7 +627,7 @@ const [country, setCountry] = useState("NONE");
   console.log(country);
   return (
     <div className="App ">
-      <Header/>
+      <Header inputValue={searchText} handleSearchNote={setSearchText}/>
 
       <div className={`w-full h-[350px] bg-center bg-cover bg-[url('./images/FARM.jpg')]`}>
 
@@ -708,7 +714,8 @@ const [country, setCountry] = useState("NONE");
 
  className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 gap-6 mx-auto w-4/5 p-2">
 {
-  products.filter(
+  products.filter((item) => item.Title.toLowerCase().includes(searchText.toLowerCase())
+      ).filter(
     function MyFil(item) {
       if(country === "NONE" || country === ""){
         return products;
@@ -766,7 +773,8 @@ CREAMS
 
 <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-6 mx-auto w-4/5 m-3 p-2">
 {
-  creams.filter(
+  creams.filter((item) => item.Title.toLowerCase().includes(searchText.toLowerCase())
+      ).filter(
     function MyFil(item) {
       if(country === "NONE" || country === ""){
         return products;
@@ -832,7 +840,8 @@ BUTTER
      
  className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 gap-6 mx-auto w-4/5 justify-around">
 {
-  butter.filter(
+  butter.filter((item) => item.Title.toLowerCase().includes(searchText.toLowerCase())
+      ).filter(
     function MyFil(item) {
       if(country === "NONE" || country === ""){
         return products;
@@ -896,7 +905,8 @@ SAFFRON
 
 <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 gap-6 mx-auto w-4/5 justify-around">
 {
-  saffron.filter(
+  saffron.filter((item) => item.Title.toLowerCase().includes(searchText.toLowerCase())
+      ).filter(
     function MyFil(item) {
       if(brand === "NONE" || brand === ""){
         return products;
@@ -963,7 +973,8 @@ CHOCOLATE FOR PROFESSIONALS
 
 <div className="grid lg:grid-cols-3 gap-6 mx-auto w-4/5 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 justify-around">
 {
-  choco.filter(
+  choco.filter((item) => item.Title.toLowerCase().includes(searchText.toLowerCase())
+      ).filter(
     function MyFil(item) {
       if(brand === "NONE" || brand === ""){
         return products;
