@@ -339,6 +339,88 @@ function clearFilter() {
 
 <span className="text-3xl font-bold capitalize  my-3 text-orange">OUR PRODUCTS</span> 
 
+<div
+
+ className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 gap-6 mx-auto w-4/5 p-2">
+{
+  products.filter((item) => item.Title.toLowerCase().includes(searchText.toLowerCase())
+      ).filter(
+    function MyFil(item) {
+      if(country === "NONE" || country === ""){
+        return products;
+      }
+     if((country !== "NONE") && item.Place === country) {
+      return item;
+     } 
+    }
+  ).filter(
+    function MyFil(item) {
+      if(brand === "NONE" || brand === ""){
+        return products;
+      }
+     if((brand !== "NONE") && item.Brand === brand) {
+      return item;
+     } 
+    }
+  ).map((item)=> 
+  (
+    <div class="container">
+
+       
+
+<div class="card">
+
+    <div class="slide slide1">
+
+        <div class="content">
+
+            <img src={item.img} className="object-contain " class="icon"/>
+
+                {/* <i class="fa fa-user-circle" aria-hidden="true"></i> */}
+
+         
+
+        </div>
+
+    </div>
+
+    <div class="slide slide2">
+
+        <div class="content">
+
+        <div className="flex flex-col m-3 ">
+      {/* <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/> */}
+      <div className="h-[25px] font-bold px-1 text-white bg-orange rounded-2xl my-1"> {item.Title} </div>
+      <div className="h-[25px] text-sm italic text-center my-1 text-gray-500"> {item.Brand} </div>
+    
+    <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
+      <img
+        src={`${(item.Place === "FRANCE") ? "https://th.bing.com/th/id/OIP.RPP275EzjhW01m70KN3J_AHaFj?pid=ImgDet&rs=1" : 
+        (item.Place === "DENMARK") ? "https://images5.alphacoders.com/102/thumb-1920-1025675.jpg" : 
+        (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
+        (item.Place === "UNITED KINGDOM") ? "https://2.bp.blogspot.com/-8A3QVbtpV_E/UPJ_z_9ItlI/AAAAAAAAFSE/zqzWc_DGS9I/s1600/Britain+flag+hd+wallpapers.jpg" : 
+        (item.Place === "NETHERLANDS") ? "https://th.bing.com/th/id/R.7ca788dcce497a591283d8aa88034272?rik=RnFW3NN%2fVY1wfg&riu=http%3a%2f%2fwww.printableflags.net%2fwp-content%2fuploads%2f2017%2f04%2fflag-netherlands-netherlands-large-flag-eZQEtX.jpg&ehk=yktkqY1mKH2jKQ6L%2fAdQij5pkAHOPlMxbk46U2YsngY%3d&risl=&pid=ImgRaw&r=0" : 
+        (item.Place === "ITALY") ? "https://www.shutterstock.com/image-illustration/italian-flag-italy-vignetted-260nw-157513982.jpg" : 
+        (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
+      />
+      </div>
+     
+    </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</div>
+  ))
+  }
+  </div>
+
 
 <div
 
