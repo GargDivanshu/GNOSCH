@@ -3,7 +3,7 @@
     top: 0; /* Stick it to the top */
     max-height: 70px;
     width: 100vw;
-  
+    z-index: 500;
     /* display: grid; */
     grid-template-areas: "logo nav";
   
