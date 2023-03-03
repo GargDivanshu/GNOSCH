@@ -373,7 +373,7 @@ function clearFilter() {
       className="hover:shadow-2xl shadow-xl m-2 rounded-md">
       <div className="flex flex-col m-3 ">
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
-      <div className="h-[25px] font-bold text-orange my-1"> {item.Title} </div>
+      <div className="h-[25px] font-bold mx-4 text-white bg-orange rounded-2xl my-1"> {item.Title} </div>
       <div className="h-[25px] text-sm italic text-center my-1 text-gray-500"> {item.Brand} </div>
     
     <div className="flex flex-row justify-between">
