@@ -390,7 +390,7 @@ function clearFilter() {
 
         <div className="flex flex-col m-3 ">
       {/* <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/> */}
-      <div className="h-[25px] font-bold px-1 text-white bg-orange rounded-2xl my-1"> {item.Title} </div>
+      <div className="h-[25px] font-bold p-2 text-white bg-orange rounded-2xl my-1"> {item.Title} </div>
       <div className="h-[25px] text-sm italic text-center my-1 text-gray-500"> {item.Brand} </div>
     
     <div className="flex flex-row justify-between">
