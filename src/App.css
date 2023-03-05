@@ -54,6 +54,8 @@
 
   background: white;
 
+  /* object-fit: contain; */
+
 }
 
 .container .card .icon .fa {

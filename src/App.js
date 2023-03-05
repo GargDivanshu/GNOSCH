@@ -242,7 +242,8 @@ function clearFilter() {
       myCountry={country} setMyCountry={setCountry}
       inputValue={searchText} handleSearchNote={setSearchText}/>
 
-      <div className={`w-full h-[350px] bg-center bg-cover bg-[url('./images/FARM.jpg')]`}>
+      <div 
+      className={`w-full h-[350px] bg-center bg-cover bg-[url('./images/FARM.jpg')] bg-no-repeat`}>
 
 </div>
 
@@ -339,7 +340,7 @@ function clearFilter() {
 
 <span className="text-3xl font-bold capitalize  my-3 text-orange">OUR PRODUCTS</span> 
 
-<div
+{/* <div
 
  className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 gap-6 mx-auto w-4/5 p-2">
 {
@@ -376,9 +377,7 @@ function clearFilter() {
 
             <img src={item.img} className="object-contain " class="icon"/>
 
-                {/* <i class="fa fa-user-circle" aria-hidden="true"></i> */}
-
-         
+                {/* <i class="fa fa-user-circle" aria-hidden="true"></i> 
 
         </div>
 
@@ -389,7 +388,7 @@ function clearFilter() {
         <div class="content">
 
         <div className="flex flex-col m-3 ">
-      {/* <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/> */}
+      {/* <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/> 
       <div className="h-[25px] font-bold px-2 text-white bg-orange rounded-2xl my-1"> {item.Title} </div>
       <div className="h-[25px] text-sm italic text-center my-1 text-gray-500"> {item.Brand} </div>
     
@@ -419,9 +418,9 @@ function clearFilter() {
 </div>
   ))
   }
-  </div>
+  </div> */}
 
-{/* 
+
 <div
 
  className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 m-3 gap-6 mx-auto w-4/5 p-2">
@@ -477,7 +476,7 @@ function clearFilter() {
   )
 }
 
-</div> */}
+</div>
 
 
 
@@ -516,7 +515,7 @@ function clearFilter() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-       className="hover:shadow-2xl">
+       className="hover:shadow-2xl shadow-xl m-2 rounded-md ">
       <div className="flex flex-col m-3 ">
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
