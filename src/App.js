@@ -315,7 +315,7 @@ function clearFilter() {
       </div>
       
      
-       <div className={`text-sm font-bold uppercase my-2 ${(country === "" && brand==="") ? "hidden" : null}`}>
+       <div className={`text-xs font-bold uppercase my-2 ${(country === "" && brand==="") ? "hidden" : null}`}>
         <span className="text-lg">Applied Filters</span>
         
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-3/5 mx-auto">
@@ -451,14 +451,14 @@ function clearFilter() {
             whileInView="show"
             viewport={{ once: false, amount: 0.75 }}
       
-      className="hover:shadow-2xl shadow-xl m-2 rounded-md">
+      className="hover:shadow-2xl shadow-xl shadow-slate-200 hover:shadow-slate-300 m-2 rounded-md">
       <div className="flex flex-col m-3 ">
-      <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
+      <img src={item.img} alt={item.alt} className="rounded-xl object-contain h-[125px]"/>
       <div className="h-[25px] font-bold mx-4 text-white bg-orange rounded-2xl my-1"> {item.Title} </div>
-      <div className="h-[25px] text-sm italic text-center my-1 text-gray-500"> {item.Brand} </div>
+      <div className="h-[25px] text-xs italic text-center my-1 text-gray-500"> {item.Brand} </div>
     
     <div className="flex flex-row justify-between">
-      <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
+      <div className="h-[25px] text-xs text-left my-1 text-gray-500"> {item.Place} </div>
       <img
         src={`${(item.Place === "FRANCE") ? "https://th.bing.com/th/id/OIP.RPP275EzjhW01m70KN3J_AHaFj?pid=ImgDet&rs=1" : 
         (item.Place === "DENMARK") ? "https://images5.alphacoders.com/102/thumb-1920-1025675.jpg" : 
@@ -469,6 +469,12 @@ function clearFilter() {
         (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
       />
       </div>
+      {(item.Qt) ? <div className="flex flex-row justify-between">
+      <div className="h-[25px] text-xs text-left text-gray-500"> {item.Qt} </div>
+      <MdProductionQuantityLimits 
+      className="text-gray-500"
+      fontSize={20}/>
+      </div> : null}
      
     </div>
     </motion.div>
@@ -515,14 +521,14 @@ function clearFilter() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-       className="hover:shadow-2xl shadow-xl m-2 rounded-md ">
+       className="hover:shadow-2xl shadow-xl shadow-slate-200 hover:shadow-slate-300 m-2 rounded-md ">
       <div className="flex flex-col m-3 ">
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
       <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
-      <div className="h-[25px] text-sm italic text-gray-500"> {item.Brand} </div>
+      <div className="h-[25px] mt-6 text-xs italic text-gray-500"> {item.Brand} </div>
       <div className="flex flex-row justify-between">
-      <div className="h-[25px] text-sm text-left my-1 text-gray-500"> {item.Place} </div>
-      <img
+      <div className="h-[25px] text-xs text-left my-1 text-gray-500"> {item.Place} </div>
+      <img 
         src={`${(item.Place === "FRANCE") ? "https://th.bing.com/th/id/OIP.RPP275EzjhW01m70KN3J_AHaFj?pid=ImgDet&rs=1" : 
         (item.Place === "DENMARK") ? "https://images5.alphacoders.com/102/thumb-1920-1025675.jpg" : 
         (item.Place === "SPAIN") ? "https://th.bing.com/th/id/OIP.xVDCnvjiX8mkOeOhWUqgzAHaD3?pid=ImgDet&rs=1" :
@@ -535,7 +541,7 @@ function clearFilter() {
       />
       </div>
       <div className="flex flex-row justify-between">
-      <div className="h-[25px] text-sm text-left text-gray-500"> {item.Qt} </div>
+      <div className="h-[25px] text-xs text-left text-gray-500"> {item.Qt} </div>
       <MdProductionQuantityLimits 
       className="text-gray-500"
       fontSize={20}/>
