@@ -453,12 +453,23 @@ function clearFilter() {
       
       className="hover:shadow-2xl shadow-xl shadow-slate-200 hover:shadow-slate-300 m-2 rounded-md">
       <div className="flex flex-col m-3 ">
-      <img src={item.img} alt={item.alt} className="rounded-xl object-contain h-[125px]"/>
-      <div className="h-[25px] font-bold mx-4 text-white bg-orange rounded-2xl my-1"> {item.Title} </div>
-      <div className="h-[25px] text-xs italic text-center my-1 text-gray-500"> {item.Brand} </div>
-    
-    <div className="flex flex-row justify-between">
-      <div className="h-[25px] text-xs text-left my-1 text-gray-500"> {item.Place} </div>
+        <div className='relative'>
+      <img src={item.img} alt={item.alt} className=" object-contain "/>
+      <div className="text-left font-bold text-xl text-black my-1"> {item.Title} </div>
+      <div className="  bg-orange text-sm rounded-lg text-white text-center absolute py-1 px-2 bottom-11 w-fit"> {item.Brand} </div>
+      </div>
+    <div className="flex flex-row justify-between items-center">
+      <div>
+      <div className=" text-sm text-left my-1 text-gray-500"> Origin : {item.Place} </div>
+      
+      
+      {(item.Qt) ? <div className="flex flex-row justify-between">
+      <div className=" text-sm text-left text-gray-500"> Package Size: {item.Qt} </div>
+      {/* <MdProductionQuantityLimits 
+      className="text-gray-500"
+      fontSize={20}/> */}
+      </div> : null}
+      </div>
       <img
         src={`${(item.Place === "FRANCE") ? "https://th.bing.com/th/id/OIP.RPP275EzjhW01m70KN3J_AHaFj?pid=ImgDet&rs=1" : 
         (item.Place === "DENMARK") ? "https://images5.alphacoders.com/102/thumb-1920-1025675.jpg" : 
@@ -469,12 +480,6 @@ function clearFilter() {
         (item.Place === "GREECE") ? "https://th.bing.com/th/id/OIP.NpYvSPDlxiZI1Lte4bM1UQHaEo?pid=ImgDet&rs=1" : null}`} className="rounded-full h-[25px] w-[25px] " alt="."
       />
       </div>
-      {(item.Qt) ? <div className="flex flex-row justify-between">
-      <div className="h-[25px] text-xs text-left text-gray-500"> {item.Qt} </div>
-      <MdProductionQuantityLimits 
-      className="text-gray-500"
-      fontSize={20}/>
-      </div> : null}
      
     </div>
     </motion.div>
@@ -524,8 +529,8 @@ function clearFilter() {
        className="hover:shadow-2xl shadow-xl shadow-slate-200 hover:shadow-slate-300 m-2 rounded-md ">
       <div className="flex flex-col m-3 ">
       <img src={item.img} alt={item.alt} className="object-contain h-[125px]"/>
-      <div className="h-[25px] font-bold text-orange"> {item.Title} </div>
-      <div className="h-[25px] mt-6 text-xs italic text-gray-500"> {item.Brand} </div>
+      <div className=" font-bold text-orange"> {item.Title} </div>
+      <div className=" mt-6 text-xs italic text-gray-500"> {item.Brand} </div>
       <div className="flex flex-row justify-between">
       <div className="h-[25px] text-xs text-left my-1 text-gray-500"> {item.Place} </div>
       <img 
