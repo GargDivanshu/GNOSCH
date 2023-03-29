@@ -158,7 +158,7 @@ function clearFilter() {
         
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-3/5 mx-auto">
           <div className={`my-3 ${(country === "" && country==="") ? "hidden" : null}`}>
-            Country: <span className="p-1 bg-gray-200 border border-gray-400 rounded-md"
+            Origin: <span className="p-1 bg-gray-200 border border-gray-400 rounded-md"
             >{country}</span>
           </div>
           <div className={`my-3 ${(brand === "" && brand==="") ? "hidden" : null}`}>
