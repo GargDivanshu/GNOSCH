@@ -158,17 +158,17 @@ function clearFilter() {
         
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-3/5 mx-auto">
           <div className={`my-3 ${(country === "" && country==="") ? "hidden" : null}`}>
-            Origin: <span className="p-1 bg-gray-200 border border-gray-400 rounded-md"
+            Origin: <span className="p-1 border-2 border-orange text-orange rounded-md"
             >{country}</span>
           </div>
           <div className={`my-3 ${(brand === "" && brand==="") ? "hidden" : null}`}>
-            Brand: <span className="p-1 bg-gray-200 border border-gray-400 rounded-md"
+            Brand: <span className="p-1 border-2 border-orange text-orange rounded-md"
             >{brand}</span>
           </div>
           </div>
           <button 
           onClick={clearFilter}
-          className="p-1 bg-gray-300 hover:bg-gray-400 border border-gray-500 rounded-lg">Clear Filter</button>
+          className="p-1 px-2 text-base transition ease-out text-white hover:border-orange bg-orange hover:border-2 hover:text-orange hover:bg-white rounded-lg">Clear Filter</button>
         
        </div>
       {/* <MyApp/> */}
