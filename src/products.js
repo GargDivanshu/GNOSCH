@@ -1,4 +1,4 @@
-import logo from './images/DairyFarm.jpg';
+import logo from './images/farmfood.jpg';
 
 export const products = [
     {img: `${logo}`, 
