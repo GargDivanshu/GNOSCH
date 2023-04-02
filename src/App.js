@@ -18,84 +18,38 @@ function App() {
 
  
 
-  const choco = [
-    {img: `${logo}`, 
-  alt: "dwv", 
-   Title: "GOURMAND 32% MILK COUVERTURES", 
-   Brand: "MASTER MARTINI",
-   Place: "MALAYSIA",
-   Qt: "10 KG BAG IN BOX"
-  },
-  {img: `${logo}`, 
-  alt: "dwv", 
-   Title: "GOURMAND 54% DARK COUVERTURES", 
-   Brand: "MASTER MARTINI",
-   Place: "MALAYSIA",
-   Qt: "10 KG BAG IN BOX"
-  },
-  {img: `${logo}`, 
-  alt: "dwv", 
-   Title: "GOURMAND 60% DARK COUVERTURES", 
-   Brand: "MASTER MARTINI",
-   Place: "MALAYSIA",
-   Qt: "10 KG BAG IN BOX"
-  },
-  {img: `${logo}`, 
-  alt: "dwv", 
-   Title: "GOURMAND 72% DARK COUVERTURES", 
-   Brand: "MASTER MARTINI",
-   Place: "MALAYSIA",
-   Qt: "10 KG BAG IN BOX"
-  },
-  ]
+  // const choco = [
+  //   {img: `${logo}`, 
+  // alt: "dwv", 
+  //  Title: "GOURMAND 32% MILK COUVERTURES", 
+  //  Brand: "MASTER MARTINI",
+  //  Place: "MALAYSIA",
+  //  Qt: "10 KG BAG IN BOX"
+  // },
+  // {img: `${logo}`, 
+  // alt: "dwv", 
+  //  Title: "GOURMAND 54% DARK COUVERTURES", 
+  //  Brand: "MASTER MARTINI",
+  //  Place: "MALAYSIA",
+  //  Qt: "10 KG BAG IN BOX"
+  // },
+  // {img: `${logo}`, 
+  // alt: "dwv", 
+  //  Title: "GOURMAND 60% DARK COUVERTURES", 
+  //  Brand: "MASTER MARTINI",
+  //  Place: "MALAYSIA",
+  //  Qt: "10 KG BAG IN BOX"
+  // },
+  // {img: `${logo}`, 
+  // alt: "dwv", 
+  //  Title: "GOURMAND 72% DARK COUVERTURES", 
+  //  Brand: "MASTER MARTINI",
+  //  Place: "MALAYSIA",
+  //  Qt: "10 KG BAG IN BOX"
+  // },
+  // ]
 
-  const Brands = [
-    {
-      name: "AKADIA"
-    },
-    {
-      name: "CANZONA"
-    },
-    {
-      name: "COLLA S.P.A."
-    },
-    {
-      name: "DAILY DAIRY"
-    },
-    {
-      name: "DAIRY LAND"
-    },
-    {
-      name: "JOSEPH HELER"
-    },
-    {
-      name: "MONTE CHRISTO"
-    },
-    {
-      name: "PAYSAN BRETON"
-    },
-    {
-      name: "TAVERNA"
-    },
-    {
-      name: "COLLA"
-    },
-    {
-      name: "QUESOS EL PASTOR"
-    },
-    {
-      name: "PAYSAN BRETON"
-    },
-    {
-      name: "BISHOP CROPWELL"
-    },
-    {
-      name: "GNOSCH"
-    },
-    {
-      name: "MASTER MARTINI"
-    },
-  ]
+
 const [brand, setBrand] = useState("");
 const [country, setCountry] = useState("");
 
@@ -337,7 +291,7 @@ function clearFilter() {
 
 
 
-
+{/* 
 <div className="grid lg:grid-cols-3 gap-6 mx-auto w-4/5 md:grid-cols-3 sm:grid-cols-1 m-3 p-2 justify-around">
 {
   choco.filter((item) => item.Title.toLowerCase().includes(searchText.toLowerCase())
@@ -382,7 +336,7 @@ function clearFilter() {
       <div className=" text-sm text-left text-gray-500"> Package Size: {item.Qt} </div>
       {/* <MdProductionQuantityLimits 
       className="text-gray-500"
-      fontSize={20}/> */}
+      fontSize={20}/>
       </div> : null}
       </div>
       <img
@@ -404,7 +358,7 @@ function clearFilter() {
 }
 
 </div>
-
+ */}
 
 </div>
     </div>

@@ -92,9 +92,9 @@ export default function MyModal({setMyCountry, myCountry, myBrand, setMyBrand}) 
     {
       name: "GNOSCH"
     },
-    {
-      name: "MASTER MARTINI"
-    },
+    // {
+    //   name: "MASTER MARTINI"
+    // },
   ]
 
   function clearFilter() {
